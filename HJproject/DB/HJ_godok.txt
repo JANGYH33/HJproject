@@ -1,0 +1,18 @@
+CREATE TABLE godok (
+  godok_no int(30) not null auto_increment primary key,
+  year int (10) NOT NULL,
+  die int (20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO godok(year , die)  VALUES('2011','98');
+INSERT INTO godok(year , die)  VALUES('2012','107');
+INSERT INTO godok(year , die)  VALUES('2013','162');
+INSERT INTO godok(year , die)  VALUES('2014','188');
+INSERT INTO godok(year , die)  VALUES('2015','219');
+INSERT INTO godok(year , die)  VALUES('2016','243');
+INSERT INTO godok(year , die)  VALUES('2017','287');
+INSERT INTO godok(year , die)  VALUES('2018','311');
+INSERT INTO godok(year , die)  VALUES('2019','346');
+INSERT INTO godok(year , die)  VALUES('2020','579');
+
+

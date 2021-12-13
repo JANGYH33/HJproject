@@ -1,0 +1,153 @@
+- 병원 테이블과 병원 데이터
+CREATE TABLE seoul_hospital (
+  h_no int(30) not null auto_increment primary key,
+  h_name varchar(255) NOT NULL UNIQUE,
+  h_pass varchar(255) NOT NULL,
+  h_open varchar(255) NOT NULL,
+  h_addr varchar(255) NOT NULL,
+  h_tel varchar(255) NOT NULL,
+  h_kind varchar(255) NOT NULL,
+  h_wi double DEFAULT NULL,
+  h_kung double DEFAULT NULL,
+  h_url varchar(255) DEFAULT NULL,
+  is_confirmed boolean DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('남서울요양병원', 123, '영업/정상', '서울특별시 구로구 남부순환로 1291  A동1234567층 B동 567층(가리봉동)', '02-863-8999','요양병원(일반요양병원)',37.479049548331105, 126.89434201110473, 'https://place.map.kakao.com/780347805', 1);
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('더조은요양병원', 54312, '영업/정상', '서울특별시 노원구 화랑로 323 (월계동)', '02-941-7800','요양병원(일반요양병원)', 37.62047845767689, 127.06265104070312, 'https://place.map.kakao.com/m/1779721125', 1);
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('시온요양병원', 1651, '영업/정상', '서울특별시 성동구 자동차시장1길 85 지하1지상3~5층 (용답동 JS빌딩)', '02-2247-7272', '요양병원(일반요양병원)', 37.56073471541375, 127.06718121321202, 'https://place.map.kakao.com/17960913', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('동부참사랑요양병원', 5555, '영업/정상', '서울특별시 광진구 동일로 154 (화양동)', '02-461-6602', '요양병원(일반요양병원)', 37.545927590779236, 127.06640918437694, 'https://place.map.kakao.com/7844108', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('참요양병원', 7621, '서울특별시 강서구 강서로 182 (화곡동)', '영업/정상', '02-2605-2114', '요양병원(일반요양병원)', 37.50435755367018, 127.1373537836361, 'https://place.map.kakao.com/11875933', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('한걸음요양병원', 894561, '영업/정상', '서울특별시 중랑구 망우로 316 이지팰리스 5~7층 503-2504505601~605701~705호 (상봉동)', '02-493-9700', '요양병원(일반요양병원)', 37.59655178873965, 127.08750286903872, 'https://place.map.kakao.com/12444798', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('강동성모요양병원', 'aa612', '영업/정상', '서울특별시 강동구 올림픽로80길 31 로뎀빌딩 (천호동)', '02-488-0020','요양병원(일반요양병원)', 37.5435681215439, 127.12720731995937, 'https://place.map.kakao.com/1730751258', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('브레인요양병원', 'brain33', '영업/정상', '서울특별시 동대문구 장한로32길 7 (장안동)','요양병원(일반요양병원)', '02-2211-2211', 37.63945697604687, 127.0626910118648, 'https://place.map.kakao.com/24752285', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('대한민국요양병원', 'kk125543', '영업/정상', '서울특별시 동대문구 장한로 200 (장안동 KS빌딩)','요양병원(일반요양병원)', '02-2213-9991', 37.57842744184611, 127.07250061321227, 'https://place.map.kakao.com/508897794', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('행복닥터스요양병원', 'hp98234', '영업/정상', '서울특별시 동대문구 정릉천동로 102 지하1층~지상4층 (제기동)', '02-2088-0580','요양병원(일반요양병원)', 37.58169755085632, 127.03573681136878, 'https://place.map.kakao.com/1150354897', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('신우요양병원', 'sin9999', '영업/정상', '서울특별시 동대문구 한천로 207 지하1지상13~6층 (전농동)', '02-2214-7582','요양병원(일반요양병원)', 37.57953532555239, 127.06803665369908, 'https://place.map.kakao.com/659411252', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('자닮인요양병원', 46489612, '영업/정상', '서울특별시 송파구 송이로 81 (가락동 르노삼성자동차)', '02-407-3375', '요양병원(일반요양병원)', 37.49892092952427, 127.12028591136708, 'https://place.map.kakao.com/509637530', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('선의요양병원', 432984, '영업/정상', '서울특별시 노원구 동일로 1419 9층~11층 (상계동)', '02-3391-3992~3', '요양병원(일반요양병원)', 37.65553058386232, 127.06001712670951, 'https://place.map.kakao.com/7939336', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('씨티칼리지요양병원', 1111, '영업/정상', '서울특별시 강남구 선릉로 751 카로시티Ⅲ (논현동)', '02-514-7979', '요양병원(일반요양병원)', 37.52180458401968, 127.03912408253275, 'https://place.map.kakao.com/1362652563', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('강남센트럴요양병원', 'gn3241', '영업/정상', '서울특별시 송파구 송이로 156 태정타워 (가락동)', '02-3411-2360','요양병원(일반요양병원)', 37.49654962533878, 127.1256824006306, 'https://place.map.kakao.com/10120693', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('현인요양병원', 'hyun11', '영업/정상', '서울특별시 강북구 삼각산로 20 (수유동)', '02-992-5200', '요양병원(일반요양병원)', 37.638798181927555, 127.00674374204827, 'https://place.map.kakao.com/704595643', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('효성요양병원', 2348234, '영업/정상', '서울특별시 강북구 삼양로 204 (미아동 효성요양병원)', '02-988-9456~7','요양병원(일반요양병원)', 37.622423443989874, 127.02119536297387, 'https://place.map.kakao.com/15390693', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('포근한요양병원', 'ff1234', '영업/정상', '서울특별시 강북구 도봉로 266 (미아동)', '02-986-9988','요양병원(일반요양병원)', 37.63241181948563, 127.02416462670907, 'https://place.map.kakao.com/12983640', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('꿈의숲요양병원', '영업/정상', '서울특별시 강북구 월계로 183 (번동)', '02-2987-9988', '요양병원(일반요양병원)', 37.62064354969694, 127.04491869787392, 'https://place.map.kakao.com/1860261052', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('북서울요양병원', 1234, '영업/정상', '서울특별시 강북구 한천로 1002 북서울요양병원 (번동)', '02-900-7006', '요양병원(일반요양병원)', 37.49915248835581, 126.93367458437584, 'https://place.map.kakao.com/817716754', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('효림요양병원', 98234234, '영업/정상', '서울특별시 동대문구 천호대로 259-1 (답십리동)', '02-962-1123','요양병원(일반요양병원)', 37.56950016868656, 127.04985521469837, 'https://place.map.kakao.com/8162940', 1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('연세에덴요양병원',7507,'영업/정상','서울특별시 은평구 통일로 669 (녹번동)','1577-5046','요양병원(일반요양병원)', 37.60621037374528, 126.93329485369975, 'https://place.map.kakao.com/14076259',1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('로하스은평효요양병원',4245,'영업/정상','서울특별시 은평구 연서로 209 보성빌 23일부4~6층 (갈현동)','02-385-2700','요양병원(일반요양병원)', 37.617609218786804, 126.91889527088283, 'https://place.map.kakao.com/22539426',1);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('한국효요양병원',9565,'영업/정상','서울특별시 은평구 은평로 170 6층7층8층 (응암동 상현빌딩동)','02-352-3552','요양병원(일반요양병원)', 37.601347683820386, 126.92681502486464, 'https://place.map.kakao.com/25528193',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('양천효요양병원',7834,'영업/정상','서울특별시 양천구 오목로 121 (신정동 양천효요양병원)','02-2696-6568','요양병원(일반요양병원)', 37.52445341334367, 126.85110492670681, 'https://place.map.kakao.com/9242247',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('로하스동서울요양병원',5234,'영업/정상','서울특별시 중랑구 봉화산로 194 신아타운 45층 (신내동)','02-577-9696','요양병원(일반요양병원)', 37.60653757310977, 127.09466408253445, 'https://place.map.kakao.com/11294138',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('하나효요양병원',1594,'영업/정상','서울특별시 은평구 서오릉로 149 세웅그룹빌딩 3~9층 (구산동)','02-356-7007','요양병원(일반요양병원)', 37.61174045811576, 126.91630128622188, 'https://place.map.kakao.com/8629761',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('효담요양병원',2845,'영업/정상','서울특별시 서대문구 통일로 544 (홍은동)','02-395-8880','요양병원(일반요양병원)', 37.596432191970614, 126.93954892670833, 'https://place.map.kakao.com/12469630',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('서울효사랑요양병원',6465,'영업/정상','서울특별시 성동구 동일로 93 (성수동2가)','02-462-0114','요양병원(일반요양병원)', 37.54131616332521, 127.06302384020259, 'https://place.map.kakao.com/17005774',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('마포요양병원',8887,'영업/정상','서울특별시 마포구 성산로 128 지하1~지상5층 (성산동)','02-337-8111','요양병원(일반요양병원)', 37.56342232961225, 126.90798025738607, 'https://place.map.kakao.com/244955512',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('에스엠씨요양병원',3467,'영업/정상','서울특별시 마포구 월드컵북로 165 지하1층~5층 (성산동 SMC)','02-374-3111','요양병원(일반요양병원)', 37.56698263752657, 126.90991536903816, 'https://place.map.kakao.com/327772617',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('태능성심요양병원',8753,'영업/정상','서울특별시 노원구 동일로 987 태릉성심요양병원 (공릉동)','02-976-0808','요양병원(일반요양병원)', 37.61837024838187, 127.07489408253473, 'https://place.map.kakao.com/20695413',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('햇살요양병원',2237,'영업/정상','서울특별시 동대문구 장한로 152 지하1~2층 지상3 ~10층 (장안동)','02-2244-5533','요양병원(일반요양병원)', 37.57667598626539, 127.0728426413287, 'https://place.map.kakao.com/26626202',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('의료법인에이치엠피의료재단녹십초요양병원',5567,'영업/정상','서울특별시 동작구 시흥대로 634 (신대방동)','02-848-0100','요양병원(일반요양병원)', 37.4884813867336, 126.90663275554103, 'https://place.map.kakao.com/8548655',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('서울현대요양병원',4712,'영업/정상','서울특별시 동작구 성대로 43 (상도동 우리빌딩)','02-3445-7575','요양병원(일반요양병원)', 37.49915248835581, 126.93359948253223, 'https://place.map.kakao.com/1038518549',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('은평요양병원',6342,'영업/정상','서울특별시 은평구 통일로 935 (갈현동)','02-384-2311','요양병원(일반요양병원)', 37.62629104265723, 126.91988828622218, 'https://place.map.kakao.com/614292880',0);
+
+
+INSERT INTO seoul_hospital(h_name, h_pass, h_open, h_addr, h_tel, h_kind, h_wi, h_kung, h_url, is_confirmed) VALUES('365강서수요양병원',9356,'영업/정상','서울특별시 강서구 양천로 35 1~6층 (방화동)','02-2663-0075','요양병원(일반요양병원)', 37.57314346199197, 126.80773111321218, 'https://place.map.kakao.com/241846465',0);
+
+
+- 허가 안 된 병원 다 1로 바꾸기
+update seoul_hospital set is_confirmed = 1 where is_confirmed = 0;
+
+- 병원 광고 신청 테이블
+CREATE TABLE seoul_hospital_ad (
+  h_no int(30) not null auto_increment primary key,
+  h_name varchar(255) NOT NULL,
+  h_addr varchar(255) NOT NULL,
+  h_tel varchar(255) NOT NULL,
+  h_url varchar(255) NOT NULL,
+  h_image  varchar(255) NOT NULL,
+  h_comment varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+- 병원 광고 신청 데이터
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('은평요양병원', '서울특별시 은평구 통일로 935 (갈현동)', '02-384-2311', 'https://place.map.kakao.com/614292880', 'images/nurse-holding-senior-man-s-hands-sympathy.jpg', '사랑, 배려, 존중이 가득한 병원');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('365강서수요양병원', '서울특별시 강서구 양천로 35 1~6층 (방화동)', '02-2663-0075', 'https://place.map.kakao.com/241846465', 'images/wife-visiting-her-ill-husband.jpg', '최고의 서비스와 의료를 제공하는 병원');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('햇살요양병원', '서울특별시 동대문구 장한로 152 지하1~2층 지상3 ~10층 (장안동)', '02-2244-5533', 'https://place.map.kakao.com/26626202', 'images/architecture-g3ee8123d8_1920.jpg', '재활치료, 존엄케어 전문 요양병원');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('서울현대요양병원', '서울특별시 동작구 성대로 43 (상도동 우리빌딩)', '02-3445-7575', 'https://place.map.kakao.com/1038518549', 'images/building-g008ad3330_1920.jpg', '마음까지 치유하는 현대요양병원');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('남서울요양병원', '서울특별시 구로구 남부순환로 1291 A동1234567층 B동 567층(가리봉동)', '02-863-8999', 'https://place.map.kakao.com/780347805', 'images/may-ga88942f68_1920.jpg', '서울 최고의 재활 요양병원');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('북서울요양병원', '서울특별시 강북구 한천로 1002 북서울요양병원 (번동)', '02-900-7006', 'https://place.map.kakao.com/817716754', 'images/empty-stomatology-orthodontist-hospital-cabinet-with-nobody-it.jpg', '진심을 담아 행복하게 모시겠습니다.');
+
+insert into seoul_hospital_ad(h_name, h_addr, h_tel, h_url, h_image, h_comment) values('강남센트럴요양병원', '서울특별시 송파구 송이로 156 태정타워 (가락동)', '02-3411-2360', 'https://place.map.kakao.com/10120693', 'images/giant-building-with-sun.jpg', '친절한 응대를 약속드립니다.');
